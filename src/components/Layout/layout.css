@@ -81,6 +81,12 @@ p {
   color: var(--primaryColor);
 }
 
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .error {
   background: var(--primaryColor);
   min-height: calc(100vh - 62px);
