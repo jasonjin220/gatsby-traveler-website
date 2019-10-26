@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import "./SideDrawer.scss"
 
@@ -7,13 +8,13 @@ const SideDrawer = ({ show }) => {
     <nav className={show ? "side-drawer open" : "side-drawer"}>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/tours">Tours</a>
+          <Link to="/tours">Tours</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>
