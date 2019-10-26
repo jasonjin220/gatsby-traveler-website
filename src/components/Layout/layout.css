@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
 
 :root {
-  --primaryColor: #30df9c;
+  --primaryColor: #26c7ac;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -25,6 +25,7 @@ body {
   background: var(--mainWhite);
   line-height: 1.4;
   font-size: 1rem;
+  margin-top: 66px;
 }
 
 h1,
@@ -43,7 +44,7 @@ p {
 }
 
 .defaultHero {
-  min-height: calc(100vh - 62px);
+  min-height: calc(100vh - 66px);
   display: flex;
   justify-content: center;
   align-items: center;
