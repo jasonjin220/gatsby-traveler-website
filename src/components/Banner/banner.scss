@@ -1,0 +1,31 @@
+.banner {
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+
+  h1 {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    letter-spacing: 6px;
+  }
+
+  p {
+    width: 85%;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    p {
+      width: 70%;
+    }
+  }
