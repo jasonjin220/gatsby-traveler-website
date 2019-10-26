@@ -28,7 +28,11 @@
         a {
             text-decoration: none;
             font-size: 22px;
-            color: black;
+            color: var(--primaryColor);
+            border: 1.5px solid rgba(63, 208, 212, 0.7);
+            padding: 6px;
+            letter-spacing: 4px;
+            border-radius: 2px;
             font-family: Lato, serif;
             font-weight: 500;
 
@@ -113,14 +117,6 @@
 
 
         .toolbar__logo {
-            margin-bottom: 4px;
-            margin-top: 9px;
-
-            @media (max-width: 775px) {
-                font-size: 2rem;
-                margin-top: -10px !important;
-            }
-
             a {
                 width: 100px;
                 font-size: 1rem !important;
