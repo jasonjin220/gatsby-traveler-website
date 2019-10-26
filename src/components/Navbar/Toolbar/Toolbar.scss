@@ -33,9 +33,7 @@
             padding: 6px;
             letter-spacing: 4px;
             border-radius: 2px;
-            font-family: Lato, serif;
             font-weight: 500;
-
             display: flex;
             align-items: center;
         }
@@ -63,10 +61,9 @@
         a {
             color: rgb(41, 42, 41);
             position: relative;
-            font-family: Lato;
+            text-transform: uppercase;
             font-size: 18px;
-            font-weight: 600;
-
+            font-weight: 500;
             text-decoration: none;
             transition: .3s;
 

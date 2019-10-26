@@ -7,13 +7,13 @@
 
   .links a {
     display: inline-block;
+    text-transform: uppercase;
     text-decoration: none;
     color: var(--mainWhite);
     margin: 0.5rem 1rem;
     letter-spacing: var(--mainSpacing);
     transition: var(--mainTransition);
     font-size: 16px;
-    font-family: Lato;
 
     &:hover {
       color: var(--primaryColor);
