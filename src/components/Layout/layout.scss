@@ -24,11 +24,7 @@ body {
   color: var(--mainBlack);
   background: var(--mainWhite);
   line-height: 1.4;
-  // font-size: 1rem;
   margin-top: 66px;
-
-  font-size: 62.5%;
-  /* 10px/16px = 62.5%; */
 
   @media only screen and (max-width: 1200px) {
     font-size: 50%;
@@ -75,11 +71,16 @@ p {
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
   border: 2px solid var(--mainWhite);
-  padding: 0.9rem 1.6rem;
+  padding: 1.1rem 2.1rem;
+  font-size: 1rem;
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
   z-index: 100;
+
+  @media only screen and (max-width: 500px) {
+    font-size: .8rem;
+  }
 }
 
 .btn-white:hover {
