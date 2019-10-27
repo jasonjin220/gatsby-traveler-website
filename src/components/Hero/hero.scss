@@ -1,0 +1,23 @@
+.hero::before {
+  content: '';
+  background: url(../../images/textures/texture-top.png) no-repeat top center;
+  background-size: 100% auto;
+  height: 100%;
+  max-width: 1000px;
+  width: 100%;
+  position: absolute;
+  top: 66px;
+  z-index: 50;
+}
+
+.hero::after {
+  content: '';
+  background: url(../../images/textures/texture-bottom.png) no-repeat bottom center;
+  background-size: 100% auto;
+  height: 100%;
+  max-width: 1000px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 50;
+}
