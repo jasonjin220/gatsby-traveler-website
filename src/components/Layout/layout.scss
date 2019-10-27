@@ -24,8 +24,15 @@ body {
   color: var(--mainBlack);
   background: var(--mainWhite);
   line-height: 1.4;
-  font-size: 1rem;
+  // font-size: 1rem;
   margin-top: 66px;
+
+  font-size: 62.5%;
+  /* 10px/16px = 62.5%; */
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 50%;
+  }
 }
 
 h1,
@@ -35,12 +42,20 @@ h4,
 h5,
 h6 {
   font-family: 'Noto Serif', serif;
+  font-size: 1.3rem;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
 
 p {
   margin-bottom: 1.25rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
+      [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 .defaultHero {

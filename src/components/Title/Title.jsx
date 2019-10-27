@@ -4,25 +4,27 @@ import styled from "styled-components"
 const Title = ({ title, subtitle }) => {
   return (
     <TitleWrapper>
-      <h4>
+      <h3>
         <span className="title">{title}</span>
         <span className="subtitle">{subtitle}</span>
-      </h4>
+      </h3>
     </TitleWrapper>
   )
 }
 
 const TitleWrapper = styled.div`
   text-transform: uppercase;
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
 
-  @media screen and (max-width: 500px) {
-    font-size: 1.4rem;
-  }
-
-  h4 {
+  h3 {
     text-align: center;
+    font-size: 1.8rem;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.4rem;
+      margin: 0 1.5rem;
+    }
+  }
+  .title {
   }
 
   .subtitle {
