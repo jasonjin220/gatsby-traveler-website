@@ -54,6 +54,7 @@ p {
 
 .btn-white,
 .btn-primary {
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
@@ -63,6 +64,7 @@ p {
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+  z-index: 100;
 }
 
 .btn-white:hover {
