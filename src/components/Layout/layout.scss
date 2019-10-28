@@ -13,10 +13,29 @@
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-* {
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none
 }
 
 body {
@@ -49,7 +68,6 @@ p {
 
 .container {
   display: grid;
-  grid-template-rows: min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
       [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
