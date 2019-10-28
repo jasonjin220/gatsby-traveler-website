@@ -57,7 +57,6 @@ h4,
 h5,
 h6 {
   font-family: 'Noto Serif', serif;
-  font-size: 1.3rem;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
@@ -69,7 +68,7 @@ p {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+      [col-start] minmax(min-content, 14.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 .defaultHero {
@@ -90,14 +89,16 @@ p {
   color: var(--mainWhite);
   border: 2px solid var(--mainWhite);
   padding: 1.1rem 2.1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-family: "Fjalla One", sans-serif;
+
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
   z-index: 100;
 
   @media only screen and (max-width: 500px) {
-    font-size: .8rem;
+    font-size: 1.2rem;
   }
 }
 

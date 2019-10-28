@@ -17,10 +17,10 @@ const TitleWrapper = styled.div`
 
   h3 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
 
     @media screen and (max-width: 500px) {
-      font-size: 1.4rem;
+      font-size: 2rem;
       margin: 0 1.5rem;
     }
   }

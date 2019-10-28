@@ -4,7 +4,7 @@
   color: var(--mainWhite);
 
   h1 {
-    font-size: 3.2rem;
+    font-size: 5rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 2rem;
@@ -15,7 +15,7 @@
   p {
     width: 85%;
     letter-spacing: 6px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin: 0 auto;
     margin-bottom: 2rem;
   }
@@ -24,7 +24,7 @@
 @media screen and (min-width: 768px) {
   .banner {
     h1 {
-      font-size: 5rem;
+      font-size: 8rem;
     }
 
     p {
