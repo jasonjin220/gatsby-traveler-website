@@ -1,6 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaSquarespace,
+  FaTwitter,
+} from "react-icons/fa"
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton"
 import "./Toolbar.scss"
 
@@ -23,6 +28,28 @@ const Toolbar = ({ isOpen, drawerClickHandler }) => (
             <li>
               <Link to="/about">About</Link>
             </li>
+            <div className="social-links">
+              <li>
+                <Link>
+                  <FaFacebookF />
+                </Link>
+              </li>
+              <li>
+                <Link>
+                  <FaInstagram />
+                </Link>
+              </li>
+              <li>
+                <Link>
+                  <FaTwitter />
+                </Link>
+              </li>
+              <li>
+                <Link>
+                  <FaSquarespace />
+                </Link>
+              </li>
+            </div>
           </ul>
         </div>
         <div className="toolbar__toggle-button">
