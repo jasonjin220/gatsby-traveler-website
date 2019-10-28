@@ -21,7 +21,7 @@ const TitleWrapper = styled.div`
 
     @media screen and (max-width: 500px) {
       font-size: 2rem;
-      margin: 0 1.5rem;
+      margin: 0 1.5rem 3rem;
     }
   }
   .title {

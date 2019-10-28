@@ -1,0 +1,25 @@
+.best-tours-wrapper {
+  padding: 10rem 0;
+  grid-column: full-start / full-end;
+
+  background: rgb(245, 245, 245);
+}
+
+.best-tours {
+  grid-column: center-start / center-end;
+  margin: 5rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-gap: 3rem;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-column: full-start / full-end;
+    margin: 0 2rem;
+  }
+
+}
