@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import {
   FaFacebookF,
   FaInstagram,
-  FaSquarespace,
+  FaTripadvisor,
   FaTwitter,
 } from "react-icons/fa"
 import "./SideDrawer.scss"
@@ -25,7 +25,7 @@ const SideDrawer = ({ show }) => {
         <div className="side-drawer__social-links">
           <li>
             <Link>
-              <FaFacebookF />
+              <FaTripadvisor />
             </Link>
           </li>
           <li>
@@ -40,7 +40,7 @@ const SideDrawer = ({ show }) => {
           </li>
           <li>
             <Link>
-              <FaSquarespace />
+              <FaFacebookF />
             </Link>
           </li>
         </div>

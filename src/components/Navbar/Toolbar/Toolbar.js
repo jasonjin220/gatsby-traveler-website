@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import {
   FaFacebookF,
   FaInstagram,
-  FaSquarespace,
+  FaTripadvisor,
   FaTwitter,
 } from "react-icons/fa"
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton"
@@ -31,7 +31,7 @@ const Toolbar = ({ isOpen, drawerClickHandler }) => (
             <div className="social-links">
               <li>
                 <Link>
-                  <FaFacebookF />
+                  <FaTripadvisor />
                 </Link>
               </li>
               <li>
@@ -46,7 +46,7 @@ const Toolbar = ({ isOpen, drawerClickHandler }) => (
               </li>
               <li>
                 <Link>
-                  <FaSquarespace />
+                  <FaFacebookF />
                 </Link>
               </li>
             </div>
