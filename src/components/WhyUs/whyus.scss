@@ -1,6 +1,6 @@
 .whyus {
   height: 100%;
-  margin: 7rem 0;
+  margin: 10rem 0;
 
   button {
     width: 100%;
@@ -51,7 +51,7 @@
 @media screen and (max-width: 500px) {
   .whyus {
     height: 100%;
-    margin: 3rem 0;
+    margin: 7rem 0;
 
     &__info-text {
       font-size: 15px;

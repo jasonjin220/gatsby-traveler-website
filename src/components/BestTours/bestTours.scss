@@ -3,6 +3,10 @@
   grid-column: full-start / full-end;
 
   background: rgb(245, 245, 245);
+
+  @media screen and (max-width: 500px) {
+    padding: 7rem 0;
+  }
 }
 
 .best-tours {
