@@ -1,15 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout/Layout"
-import Hero from "../components/Hero/Hero"
+// import Hero from "../components/Hero/Hero"
+import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner/Banner"
 import WhyUs from "../components/WhyUs/WhyUs"
 import BestTours from "../components/BestTours/BestTours"
 import Services from "../components/Services/Services"
+import { graphql } from "gatsby"
 
-export default () => (
+export default ({ data }) => (
   <Layout>
-    <Hero>
+    <StyledHero home="true" img={data.homeHeroImage.childImageSharp.fluid}>
       <Banner
         className="banner"
         title="find your way"
@@ -19,9 +21,21 @@ export default () => (
           Explore Tours
         </Link>
       </Banner>
-    </Hero>
+    </StyledHero>
     <WhyUs />
     <BestTours />
     <Services />
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    homeHeroImage: file(relativePath: { eq: "hero.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4140) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
