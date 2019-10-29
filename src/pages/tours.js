@@ -1,12 +1,36 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
+import StyledHero from "../components/StyledHero"
+import Banner from "../components/Banner/Banner"
+import { graphql } from "gatsby"
 
-const tours = () => {
+const tours = ({ data }) => {
   return (
     <Layout>
-      <h1>Tours Page</h1>
+      <StyledHero
+        opacity="true"
+        img={data.toursHeroImage.childImageSharp.fluid}
+      >
+        <Banner
+          className="banner"
+          title="Tours"
+          info="Your adventure starts here"
+        ></Banner>
+      </StyledHero>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    toursHeroImage: file(relativePath: { eq: "toursHero.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4140) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
 
 export default tours

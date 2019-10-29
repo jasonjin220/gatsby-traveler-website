@@ -11,7 +11,11 @@ import { graphql } from "gatsby"
 
 export default ({ data }) => (
   <Layout>
-    <StyledHero home="true" img={data.homeHeroImage.childImageSharp.fluid}>
+    <StyledHero
+      home="true"
+      opacity="true"
+      img={data.homeHeroImage.childImageSharp.fluid}
+    >
       <Banner
         className="banner"
         title="find your way"
