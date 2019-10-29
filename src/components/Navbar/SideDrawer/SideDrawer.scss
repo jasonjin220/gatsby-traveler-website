@@ -1,57 +1,63 @@
 .side-drawer {
-    height: 100%;
-    background: var(--mainWhite);
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 60vw;
-    max-width: 400px;
-    z-index: 200000000;
-    transform: translateX(-100%);
-    transition: transform 0.4s ease-out;
+  height: 100%;
+  background: var(--mainWhite);
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  max-width: 400px;
+  z-index: 200000000;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-out;
 
-    &.open {
-        transform: translateX(0);
-    }
+  &.open {
+    transform: translateX(0);
+  }
 
+  &__social-links {
     a {
-        color: #000000;
-        text-decoration: none;
-        font-size: 18px;
-        display: block;
-        padding: 20px 0;
-        text-transform: uppercase;
+      color: var(--primaryColor) !important;
     }
+  }
 
-    .btn {
-        display: block;
-        padding: 25px 0;
+  a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 20px 0;
+    text-transform: uppercase;
+  }
+
+  .btn {
+    display: block;
+    padding: 25px 0;
+  }
+
+  ul {
+    margin-top: 26px;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+    li {
+      box-sizing: border-box;
+      text-align: center;
+      border-bottom: 1px solid rgb(255, 255, 255);
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
-
-    ul {
-        margin-top: 26px;
-        height: 100%;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-
-        li {
-            box-sizing: border-box;
-            text-align: center;
-            border-bottom: 1px solid rgb(255, 255, 255);
-
-            &:last-child {
-                border-bottom: none;
-            }
-        }
-    }
+  }
 }
 
 
 @media (min-width: 769px) {
-    .side-drawer {
-        display: none;
-    }
+  .side-drawer {
+    display: none;
+  }
 }

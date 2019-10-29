@@ -1,6 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaSquarespace,
+  FaTwitter,
+} from "react-icons/fa"
 import "./SideDrawer.scss"
 
 const SideDrawer = ({ show }) => {
@@ -16,6 +21,29 @@ const SideDrawer = ({ show }) => {
         <li>
           <Link to="/about">About</Link>
         </li>
+
+        <div className="side-drawer__social-links">
+          <li>
+            <Link>
+              <FaFacebookF />
+            </Link>
+          </li>
+          <li>
+            <Link>
+              <FaInstagram />
+            </Link>
+          </li>
+          <li>
+            <Link>
+              <FaTwitter />
+            </Link>
+          </li>
+          <li>
+            <Link>
+              <FaSquarespace />
+            </Link>
+          </li>
+        </div>
       </ul>
     </nav>
   )
