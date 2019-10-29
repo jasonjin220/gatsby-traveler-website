@@ -2,18 +2,32 @@ import React from "react"
 import Title from "../Title/Title"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import img from "../../images/whyus.jpg"
-
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import "./whyus.scss"
 
+const getImage = graphql`
+  query whyusImage {
+    whyusImage: file(relativePath: { eq: "whyus.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
+
 const WhyUs = () => {
+  const { whyusImage } = useStaticQuery(getImage)
+
   return (
     <section className="whyus">
       <Title title="Why choose " subtitle="Traveler?" />
       <CenteredDiv>
         <article className="whyus__img">
           <div className="whyus__img-container">
-            <img src={img} alt="about company" />
+            <Img fluid={whyusImage.childImageSharp.fluid} />
           </div>
         </article>
         <article className="whyus__info">
