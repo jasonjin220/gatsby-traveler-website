@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner/Banner"
+import Tours from "../components/Tours/Tours"
 import { graphql } from "gatsby"
 
 const tours = ({ data }) => {
@@ -17,6 +18,7 @@ const tours = ({ data }) => {
           info="Your adventure starts here"
         ></Banner>
       </StyledHero>
+      <Tours />
     </Layout>
   )
 }

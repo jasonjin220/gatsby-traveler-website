@@ -1,0 +1,68 @@
+.tour-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 12rem .2fr;
+  user-select: none;
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+
+  &__img-wrapper {
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    z-index: 1;
+    opacity: .9;
+    object-fit: cover;
+    display: block;
+
+    transition: .5s ease;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+      backface-visibility: hidden;
+      cursor: pointer;
+    }
+  }
+
+  &__img:hover {
+    opacity: 1 !important;
+  }
+
+  &__info {
+    margin: 0;
+    font-size: 2rem;
+    color: rgb(93, 93, 93);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fjalla One", sans-serif;
+    z-index: 10;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__price-offer {
+    background-color: rgb(241, 241, 241);
+    background-color: var(--primaryColor);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.6rem;
+
+    span {
+      font-size: 2rem;
+    }
+  }
+}
