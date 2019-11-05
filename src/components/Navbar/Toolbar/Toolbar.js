@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import { Link } from "gatsby"
 import {
   FaFacebookF,
   FaInstagram,
@@ -14,40 +15,48 @@ const Toolbar = ({ isOpen, drawerClickHandler }) => (
     <div className="toolbar-wrapper">
       <nav className="toolbar__navigation">
         <div className="toolbar__logo">
-          <Link to="/">TRAVELER</Link>
+          <AniLink fade to="/">
+            TRAVELER
+          </AniLink>
         </div>
         <div className="spacer" />
         <div className="toolbar_navigation-items">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <AniLink fade to="/">
+                Home
+              </AniLink>
             </li>
             <li>
-              <Link to="/tours">Tours</Link>
+              <AniLink fade to="/tours">
+                Tours
+              </AniLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <AniLink fade to="/about">
+                About
+              </AniLink>
             </li>
             <div className="social-links">
               <li>
-                <Link>
+                <AniLink>
                   <FaTripadvisor />
-                </Link>
+                </AniLink>
               </li>
               <li>
-                <Link>
+                <AniLink>
                   <FaInstagram />
-                </Link>
+                </AniLink>
               </li>
               <li>
-                <Link>
+                <AniLink>
                   <FaTwitter />
-                </Link>
+                </AniLink>
               </li>
               <li>
-                <Link>
+                <AniLink>
                   <FaFacebookF />
-                </Link>
+                </AniLink>
               </li>
             </div>
           </ul>

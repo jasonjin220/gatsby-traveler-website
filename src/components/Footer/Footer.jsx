@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import { Link } from "gatsby"
 import {
   FaFacebookF,
   FaInstagram,
@@ -13,24 +14,24 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/tours">Tours</Link>
-        <Link to="/about">About</Link>
+        <AniLink to="/">Home</AniLink>
+        <AniLink to="/tours">Tours</AniLink>
+        <AniLink to="/about">About</AniLink>
       </div>
 
       <div className="icons">
-        <Link>
+        <AniLink>
           <FaFacebookF />
-        </Link>
-        <Link>
+        </AniLink>
+        <AniLink>
           <FaInstagram />
-        </Link>
-        <Link>
+        </AniLink>
+        <AniLink>
           <FaTwitter />
-        </Link>
-        <Link>
+        </AniLink>
+        <AniLink>
           <FaSquarespace />
-        </Link>
+        </AniLink>
       </div>
       <div className="copyright">
         copyright &copy; Traveler travel company {new Date().getFullYear()} all
