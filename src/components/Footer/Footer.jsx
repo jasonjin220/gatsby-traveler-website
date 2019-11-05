@@ -14,9 +14,9 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="links">
-        <AniLink to="/">Home</AniLink>
-        <AniLink to="/tours">Tours</AniLink>
-        <AniLink to="/about">About</AniLink>
+        <AniLink fade to="/">Home</AniLink>
+        <AniLink fade to="/tours">Tours</AniLink>
+        <AniLink fade to="/about">About</AniLink>
       </div>
 
       <div className="icons">
