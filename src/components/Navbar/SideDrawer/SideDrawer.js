@@ -1,6 +1,5 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-// import { Link } from "gatsby"
 import {
   FaFacebookF,
   FaInstagram,
@@ -31,24 +30,24 @@ const SideDrawer = ({ show }) => {
 
         <div className="side-drawer__social-links">
           <li>
-            <Link>
+            <AniLink>
               <FaTripadvisor />
-            </Link>
+            </AniLink>
           </li>
           <li>
-            <Link>
+            <AniLink>
               <FaInstagram />
-            </Link>
+            </AniLink>
           </li>
           <li>
-            <Link>
+            <AniLink>
               <FaTwitter />
-            </Link>
+            </AniLink>
           </li>
           <li>
-            <Link>
+            <AniLink>
               <FaFacebookF />
-            </Link>
+            </AniLink>
           </li>
         </div>
       </ul>
