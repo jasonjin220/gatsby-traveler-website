@@ -1,14 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:900&display=swap');
+
 .tour-card {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 12rem .2fr;
+  grid-template-rows: 1fr .4fr .1fr;
   user-select: none;
-
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+
+
+  @media screen and (max-width: 900px) {
+    grid-template-rows: 1fr .3fr .1fr;
+  }
 
   &__img-wrapper {
     overflow: hidden;
+  }
+
+  &__duration {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: block;
+    color: #fff;
+    background: var(--primaryColor);
+    text-align: center;
+    z-index: 10;
+  }
+
+  &__duration-days {
+    height: 38px;
+    font-family: Nunito;
+    font-size: 1.7rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+    display: block;
+    margin-top: .1rem;
+  }
+
+  &__duration-text {
+    display: inherit;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: Nunito;
+    margin-top: -1.1rem;
   }
 
   &__img {
@@ -33,10 +77,11 @@
     opacity: 1 !important;
   }
 
-  &__info {
+  &__name {
     margin: 0;
-    font-size: 2rem;
-    color: rgb(93, 93, 93);
+    padding: 1rem 2rem;
+    font-size: 1.9rem;
+    color: rgb(63, 63, 63);
     height: 100%;
     text-align: center;
     display: flex;
@@ -46,15 +91,16 @@
     z-index: 10;
 
     @media screen and (max-width: 500px) {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
     }
   }
 
   &__price-offer {
-    background-color: rgb(241, 241, 241);
-    background-color: var(--primaryColor);
-    color: #fff;
+    padding-bottom: 1rem;
+    color: var(--primaryColor);
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +108,24 @@
     font-size: 1.6rem;
 
     span {
-      font-size: 2rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__btn-wrapper {
+    padding: 1rem;
+  }
+
+  &__btn {
+    width: 100%;
+
+    &:hover {
+      background-color: var(--primaryColor);
+      color: #fff;
+    }
+
+    @media screen and (max-width: 900px) {
+      font-size: 1.5rem;
     }
   }
 }
