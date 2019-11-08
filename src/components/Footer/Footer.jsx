@@ -4,7 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import {
   FaFacebookF,
   FaInstagram,
-  FaSquarespace,
+  FaTripadvisor,
   FaTwitter,
 } from "react-icons/fa"
 
@@ -14,24 +14,30 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="links">
-        <AniLink fade to="/">Home</AniLink>
-        <AniLink fade to="/tours">Tours</AniLink>
-        <AniLink fade to="/about">About</AniLink>
+        <AniLink fade to="/">
+          Home
+        </AniLink>
+        <AniLink fade to="/tours">
+          Tours
+        </AniLink>
+        <AniLink fade to="/about">
+          About
+        </AniLink>
       </div>
 
       <div className="icons">
-        <AniLink>
-          <FaFacebookF />
-        </AniLink>
-        <AniLink>
+        <a href="https://www.tripadvisor.co.uk/">
+          <FaTripadvisor />
+        </a>
+        <a href="https://www.instagram.com/">
           <FaInstagram />
-        </AniLink>
-        <AniLink>
+        </a>
+        <a href="https://twitter.com/">
           <FaTwitter />
-        </AniLink>
-        <AniLink>
-          <FaSquarespace />
-        </AniLink>
+        </a>
+        <a href="https://en-gb.facebook.com/">
+          <FaFacebookF />
+        </a>
       </div>
       <div className="copyright">
         copyright &copy; Traveler travel company {new Date().getFullYear()} all

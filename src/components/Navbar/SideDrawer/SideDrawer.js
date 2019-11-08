@@ -30,24 +30,24 @@ const SideDrawer = ({ show }) => {
 
         <div className="side-drawer__social-links">
           <li>
-            <AniLink>
+            <a href="https://www.tripadvisor.co.uk/">
               <FaTripadvisor />
-            </AniLink>
+            </a>
           </li>
           <li>
-            <AniLink>
+            <a href="https://www.instagram.com/">
               <FaInstagram />
-            </AniLink>
+            </a>
           </li>
           <li>
-            <AniLink>
+            <a href="https://twitter.com/">
               <FaTwitter />
-            </AniLink>
+            </a>
           </li>
           <li>
-            <AniLink>
+            <a href="https://en-gb.facebook.com/">
               <FaFacebookF />
-            </AniLink>
+            </a>
           </li>
         </div>
       </ul>
