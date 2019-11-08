@@ -65,6 +65,10 @@
     transition: .5s ease;
     opacity: 0.8;
 
+    @media screen and (min-width: 900px) {
+      height: 245px;
+    }
+
     &:hover {
       opacity: 1;
       transform: scale(1.1);
@@ -79,7 +83,7 @@
 
   &__name {
     margin: 0;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     font-size: 1.9rem;
     color: rgb(63, 63, 63);
     height: 100%;
@@ -96,7 +100,6 @@
   }
 
   &__price-offer {
-    padding-bottom: 1rem;
     color: var(--primaryColor);
     text-align: center;
     text-transform: uppercase;
