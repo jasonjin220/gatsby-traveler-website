@@ -1,31 +1,44 @@
 import React from "react"
 import Title from "../Title/Title"
-import TourCard from "../TourCard/TourCard"
-import img from "../../images/tours/test.jpg"
+import Tour from "../Tour/Tour"
+import { useStaticQuery, graphql } from "gatsby"
 
 import "./tours.scss"
 
+const getTours = graphql`
+  {
+    tours: allContentfulTour {
+      edges {
+        node {
+          name
+          price
+          slug
+          country
+          contentful_id
+          days
+          images {
+            fluid {
+              ...GatsbyContentfulFluid_tracedSVG
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
 const Tours = () => {
+  const response = useStaticQuery(getTours)
+  const tours = response.tours.edges
+
   return (
     <div className="tours-wrapper">
       <Title title="Choose your dream " subtitle="tour" />
       <div className="container">
         <section className="tours">
-          <TourCard imgSrc={img} price="2399" />
-          <TourCard imgSrc={img} price="1589" />
-          <TourCard imgSrc={img} price="3999" />
-          <TourCard imgSrc={img} price="2500" />
-          <TourCard imgSrc={img} price="4500" />
-          <TourCard imgSrc={img} price="3499" />
-          <TourCard imgSrc={img} price="3499" />
-          <TourCard imgSrc={img} price="1589" />
-          <TourCard imgSrc={img} price="4500" />
-          <TourCard imgSrc={img} price="3699" />
-          <TourCard imgSrc={img} price="1589" />
-          <TourCard imgSrc={img} price="3499" />
-          <TourCard imgSrc={img} price="2499" />
-          <TourCard imgSrc={img} price="4500" />
-          <TourCard imgSrc={img} price="1589" />
+          {tours.map(({ node }) => (
+            <Tour key={node.contentful_id} tour={node} />
+          ))}
         </section>
       </div>
     </div>

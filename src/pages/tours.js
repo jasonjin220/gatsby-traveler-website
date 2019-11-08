@@ -19,6 +19,9 @@ const tours = ({ data }) => {
         ></Banner>
       </StyledHero>
       <Tours />
+      <Tours />
+      <Tours />
+      <Tours />
     </Layout>
   )
 }
