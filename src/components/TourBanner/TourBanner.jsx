@@ -11,35 +11,35 @@ const TourBanner = ({ images }) => {
   return (
     <main>
       <div className="tour-banner">
-        <figure className="tour-banner__banner-img--1">
+        <figure className="tour-banner__item tour-banner__item--1">
           <Image
             fluid={img1}
             className="tour-banner__banner-img"
             alt="banner main img"
           />
         </figure>
-        <figure className="tour-banner__banner-img--2">
+        <figure className="tour-banner__item tour-banner__item--2">
           <Image
             fluid={img2}
             className="tour-banner__banner-img"
             alt="banner img2"
           />
         </figure>
-        <figure className="tour-banner__banner-img--3">
+        <figure className="tour-banner__item tour-banner__item--3">
           <Image
             fluid={img3}
             className="tour-banner__banner-img"
             alt="banner main img3"
           />
         </figure>
-        <figure className="tour-banner__banner-img--4">
+        <figure className="tour-banner__item tour-banner__item--4">
           <Image
             fluid={img4}
             className="tour-banner__banner-img"
             alt="banner main img4"
           />
         </figure>
-        <figure className="tour-banner__banner-img--5">
+        <figure className="tour-banner__item tour-banner__item--5">
           <Image
             fluid={img5}
             className="tour-banner__banner-img"
