@@ -8,7 +8,7 @@ import "./tourCard.scss"
 const TourCard = ({ name, price, slug, days, image }) => {
   return (
     <div className="tour-card">
-      <AniLink to={`/tours/${slug}`}>
+      <AniLink fade to={`/tours/${slug}`}>
         <figure className="tour-card__img-wrapper">
           <Image fluid={image} className="tour-card__img" alt="tour" />
           <figcaption className="tour-card__duration">
@@ -21,7 +21,7 @@ const TourCard = ({ name, price, slug, days, image }) => {
       <div className="tour-card__price-offer">
         From &pound;<span>{price}</span>
       </div>
-      <AniLink to={`/tours/${slug}`}>
+      <AniLink fade to={`/tours/${slug}`}>
         <div className="tour-card__btn-wrapper">
           <button type="button" className="btn-primary tour-card__btn">
             View Tour
