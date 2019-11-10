@@ -18,6 +18,8 @@ const TitleWrapper = styled.div`
   h3 {
     text-align: center;
     font-size: 2.8rem;
+    font-weight: bold;
+    font-family: "Nunito";
 
     @media screen and (max-width: 500px) {
       font-size: 2rem;

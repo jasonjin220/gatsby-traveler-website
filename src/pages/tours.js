@@ -14,7 +14,9 @@ const tours = ({ data }) => {
       >
         <Banner
           className="banner"
-          title="Tours"
+          title="Epic
+          Adventure
+          Tours"
           info="Your adventure starts here"
         ></Banner>
       </StyledHero>
