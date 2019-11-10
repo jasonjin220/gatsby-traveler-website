@@ -3,7 +3,7 @@ import Title from "../Title/Title"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Image from "gatsby-image"
 import "./whyus.scss"
 
 const getImage = graphql`
@@ -27,7 +27,7 @@ const WhyUs = () => {
       <CenteredDiv>
         <article className="whyus__img">
           <div className="whyus__img-container">
-            <Img fluid={whyusImage.childImageSharp.fluid} />
+            <Image fluid={whyusImage.childImageSharp.fluid} />
           </div>
         </article>
         <article className="whyus__info">
