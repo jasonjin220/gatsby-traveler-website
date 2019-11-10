@@ -2,8 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import TourBanner from "../components/TourBanner/TourBanner"
+import TourDetails from "../components/TourDetails/TourDetails"
 
 const TourTemplate = ({ data }) => {
+  console.log(data)
   const {
     name,
     price,
@@ -12,10 +14,19 @@ const TourTemplate = ({ data }) => {
     description: { description },
     images,
     hightlights,
+    highlightsImages,
+    itinerary,
+    itineraryImages,
   } = data.tour
   return (
     <Layout>
       <TourBanner images={images} />
+      <TourDetails
+        name={name}
+        description={description}
+        days={days}
+        price={price}
+      />
     </Layout>
   )
 }
