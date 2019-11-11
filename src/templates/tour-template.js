@@ -13,10 +13,8 @@ const TourTemplate = ({ data }) => {
     days,
     description: { description },
     images,
-    hightlights,
-    highlightsImages,
+    highlights,
     itinerary,
-    itineraryImages,
   } = data.tour
   return (
     <Layout>
@@ -26,6 +24,7 @@ const TourTemplate = ({ data }) => {
         description={description}
         days={days}
         price={price}
+        highlights={highlights}
       />
     </Layout>
   )
@@ -52,7 +51,11 @@ export const query = graphql`
         }
       }
       highlights {
-        info
+        fluid {
+          ...GatsbyContentfulFluid
+        }
+        title
+        description
       }
     }
   }

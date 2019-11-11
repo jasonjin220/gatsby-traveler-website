@@ -2,8 +2,9 @@ import React from "react"
 import "./tourDetails.scss"
 import map from "../../images/europe.svg"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Image from "gatsby-image"
 
-const TourDetails = ({ name, description, days, price }) => {
+const TourDetails = ({ name, description, days, price, highlights }) => {
   return (
     <section className="tour-section">
       <div className="tour-section__details">
@@ -46,6 +47,28 @@ const TourDetails = ({ name, description, days, price }) => {
           </p>
         </div>
       </div>
+      <section className="tour-highlights">
+        <div className="highlight-box-container">
+          <h2 className="hightlight-title">Highlights</h2>
+          {highlights.map(highlight => (
+            <div className="highlight-box">
+              <div className="highlight-box__image">
+                <Image
+                  fluid={highlight.fluid}
+                  className="highlight-box__image__highlight-image"
+                  alt="highlight"
+                />
+              </div>
+              <div className="highlight-box__text">
+                <h3 className="highlight-box__title">{highlight.title}</h3>
+                <p className="highlight-box__description">
+                  {highlight.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </section>
   )
 }
