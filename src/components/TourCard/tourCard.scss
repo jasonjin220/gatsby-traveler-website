@@ -61,19 +61,15 @@
   &__img {
     width: 100%;
     z-index: 1;
-    opacity: .9;
     object-fit: cover;
     display: block;
-
     transition: .5s ease;
-    opacity: 0.8;
 
     @media screen and (min-width: 900px) {
       height: 245px;
     }
 
     &:hover {
-      opacity: 1;
       transform: scale(1.1);
       backface-visibility: hidden;
       cursor: pointer;
