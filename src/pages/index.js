@@ -5,6 +5,7 @@ import Layout from "../components/Layout/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner/Banner"
 import WhyUs from "../components/WhyUs/WhyUs"
+import HomeBanner from "../components/HomeBanner/HomeBanner"
 import BestTours from "../components/BestTours/BestTours"
 import Services from "../components/Services/Services"
 import { graphql } from "gatsby"
@@ -26,6 +27,7 @@ export default ({ data }) => (
         </AniLink>
       </Banner>
     </StyledHero>
+    <HomeBanner />
     <WhyUs />
     <BestTours />
     <Services />
