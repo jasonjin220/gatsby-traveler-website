@@ -11,7 +11,9 @@ const TourDetails = ({
   price,
   highlights,
   departure,
+  itinerary,
 }) => {
+  console.log("itinerary:", itinerary)
   return (
     <section className="tour-section">
       <div className="tour-section__details">
@@ -72,6 +74,27 @@ const TourDetails = ({
                   {highlight.description}
                 </p>
               </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section class="itinerary-section">
+        <h2 className="itinerary__title">Itinerary</h2>
+        <div class="itinerary__tabs">
+          {itinerary.map((it, idx) => (
+            <div class="tab">
+              <input type="checkbox" id={idx} />
+              <label class="tab__label" for={idx}>
+                {!it.title ? (
+                  it.day
+                ) : (
+                  <p>
+                    <span className="tab__label-day">{it.day}</span> :
+                    <span className="tab__label-title">{it.title}</span>
+                  </p>
+                )}
+              </label>
+              <div class="tab__content">{it.info}</div>
             </div>
           ))}
         </div>

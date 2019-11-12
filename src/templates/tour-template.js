@@ -27,6 +27,7 @@ const TourTemplate = ({ data }) => {
         price={price}
         highlights={highlights}
         departure={departure}
+        itinerary={itinerary}
       />
     </Layout>
   )
@@ -47,6 +48,7 @@ export const query = graphql`
       itinerary {
         day
         info
+        title
       }
       images {
         fluid {

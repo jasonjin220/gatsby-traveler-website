@@ -355,4 +355,110 @@
       color: #767676;
     }
   }
+
+  // *** ACCORDION STYLES *** //
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  // :checked
+  input:checked {
+    + .tab__label {
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    ~ .tab__content {
+      max-height: 100vh;
+      padding: 1em;
+    }
+  }
+
+  .itinerary-section {
+    @media only screen and (max-width: 1450px) {
+      margin: 0 2rem;
+    }
+    @media only screen and (max-width: 540px) {
+      margin: 2rem 2rem;
+    }
+
+    .itinerary {
+      &__title {
+        color: var(--primaryColor);
+        font-weight: bold;
+        font-family: "Nunito";
+        font-size: 3.4rem;
+
+        @media only screen and (max-width: 540px) {
+          text-align: center;
+        }
+      }
+
+      &__tabs {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
+
+  .tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+
+    &__label {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      font-size: 1.5rem;
+      font-family: "Nunito";
+      color: var(--primaryColor);
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.4s;
+
+      p {
+        margin: 0;
+      }
+
+      &-day {
+        color: var(--primaryColor);
+      }
+
+      &-title {
+        align-self: center;
+        color: #575757;
+        padding-left: 0.5rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      &:hover {
+        background-color: #fafafa;
+      }
+
+      &::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all 0.35s;
+      }
+    }
+
+    &__content {
+      max-height: 0;
+      padding: 0 1em;
+      margin: 0 1rem;
+      font-size: 1.5rem;
+      font-family: "Nunito", sans-serif;
+      color: #767676;
+      background: white;
+      transition: all 0.4s;
+    }
+  }
 }
