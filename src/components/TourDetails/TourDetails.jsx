@@ -56,7 +56,7 @@ const TourDetails = ({
           </p>
         </div>
       </div>
-      <section className="tour-highlights">
+      <section className="tour-section__highlights">
         <div className="highlight-box-container">
           <h2 className="hightlight-title">Highlights</h2>
           {highlights.map(highlight => (
@@ -78,8 +78,8 @@ const TourDetails = ({
           ))}
         </div>
       </section>
-      <section class="itinerary-section">
-        <h2 className="itinerary__title">Itinerary</h2>
+      <section class="tour-section__itinerary">
+        <h2 className="itinerary-title">Itinerary</h2>
         <div class="itinerary__tabs">
           {itinerary.map((it, idx) => (
             <div class="tab">
