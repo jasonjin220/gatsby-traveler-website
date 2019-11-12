@@ -4,7 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr .4fr .1fr;
+  grid-template-rows: 1fr 8rem 3rem;
   user-select: none;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid rgb(226, 226, 226);
@@ -12,7 +12,7 @@
   border-bottom-left-radius: .5rem;
 
   @media screen and (max-width: 900px) {
-    grid-template-rows: 1fr .3fr .1fr;
+    grid-template-rows: 1fr 8rem 3rem;
   }
 
   &__img-wrapper {
@@ -35,7 +35,8 @@
 
   &__duration-days {
     height: 38px;
-    font-family: Nunito;
+    font-family: "Nunito";
+    font-weight: bold;
     font-size: 1.7rem;
     color: #fff;
     display: flex;
@@ -53,7 +54,7 @@
     letter-spacing: 1px;
     text-align: center;
     font-size: 1.1rem;
-    font-family: Nunito;
+    font-family: "Nunito";
     margin-top: -1.1rem;
   }
 
@@ -93,7 +94,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Nunito";
     z-index: 10;
 
     @media screen and (max-width: 500px) {
@@ -102,18 +103,22 @@
   }
 
   &__price-offer {
-    color: var(--primaryColor);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    font-family: "Nunito";
+    font-weight: bold;
+    color: rgb(63, 63, 63);
 
     span {
-      font-size: 1.8rem;
+      margin-left: .5rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--primaryColor);
     }
   }
 
@@ -125,7 +130,7 @@
     width: 100%;
 
     &:hover {
-      background-color: var(--primaryColor);
+      background-color: #0ba889;
       color: #fff;
     }
 

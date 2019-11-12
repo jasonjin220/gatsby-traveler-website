@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,900&display=swap');
 
 :root {
-  --primaryColor: #26c7ac;
+  --primaryColor: #1abc9c;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -115,6 +115,9 @@ p {
   background: var(--primaryColor);
   color: var(--mainWhite);
   border: 2px solid var(--primaryColor);
+  border-radius: 4px;
+  font-family: "Nunito";
+  font-weight: bolder;
 }
 
 .btn-primary:hover {

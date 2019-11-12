@@ -19,12 +19,12 @@ const TourCard = ({ name, price, slug, days, image }) => {
       </AniLink>
       <h3 className="tour-card__name">{name}</h3>
       <div className="tour-card__price-offer">
-        From &pound;<span>{price}</span>
+        From <span> &pound;{price}</span>
       </div>
       <AniLink fade to={`/tours/${slug}`}>
         <div className="tour-card__btn-wrapper">
           <button type="button" className="btn-primary tour-card__btn">
-            View Tour
+            Explore Tour
           </button>
         </div>
       </AniLink>
