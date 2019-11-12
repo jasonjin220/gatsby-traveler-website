@@ -72,7 +72,7 @@ p {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 14.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+      [col-start] minmax(min-content, 15.8rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 .defaultHero {
@@ -92,9 +92,11 @@ p {
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
   border: 2px solid var(--mainWhite);
-  padding: 1.1rem 2.1rem;
+  border-radius: 4px;
+  padding: 1.5rem 2.5rem;
   font-size: 1.3rem;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
 
   display: inline-block;
   transition: var(--mainTransition);
