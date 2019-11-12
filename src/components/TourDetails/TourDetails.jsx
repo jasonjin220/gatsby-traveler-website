@@ -4,7 +4,14 @@ import map from "../../images/europe.svg"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Image from "gatsby-image"
 
-const TourDetails = ({ name, description, days, price, highlights }) => {
+const TourDetails = ({
+  name,
+  description,
+  days,
+  price,
+  highlights,
+  departure,
+}) => {
   return (
     <section className="tour-section">
       <div className="tour-section__details">
@@ -21,7 +28,7 @@ const TourDetails = ({ name, description, days, price, highlights }) => {
             </figcaption>
           </figure>
           <h2 className="trip-box__title">{name}</h2>
-          <h5 className="trip-box__subtitle">Departs Calgary</h5>
+          <h5 className="trip-box__subtitle">Departs {departure}</h5>
           <div className="trip-box__info">
             <div className="trip-box__days">
               <span className="title">Days</span>
