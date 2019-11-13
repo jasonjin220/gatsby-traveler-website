@@ -54,18 +54,20 @@
 
   &__title {
     font-size: 1.8rem;
+    font-family: "Nunito";
+    font-weight: bold;
+    color: #484848;
 
     @media only screen and (max-width: 1200px) {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
   }
 
   &__text {
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
 
     @media only screen and (max-width: 500px) {
-      font-size: 15px;
+      font-size: 1.4rem;
     }
   }
 }
