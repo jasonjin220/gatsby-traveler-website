@@ -20,8 +20,8 @@ const Services = () => {
             <img className="service__icon" src={plane} alt="plane" />
             <h4 className="service__title">Air Ticketing</h4>
             <p className="service__text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              distinctio necessitatibus pariatur voluptatibus.
+              Book flights with confidence. We compare flight deals from over
+              150 airlines to find you the best prices.
             </p>
           </div>
           <div className="service">
@@ -29,8 +29,8 @@ const Services = () => {
 
             <h4 className="service__title">Cruisess</h4>
             <p className="service__text">
-              Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus
-              rerum sed a eligendi aut quia.
+              With thousands of inspiring cruises to choose from we have all the
+              best cruise deals, promotions and exclusive offers.
             </p>
           </div>
           <div className="service">
@@ -38,8 +38,8 @@ const Services = () => {
 
             <h4 className="service__title">Tour Packages</h4>
             <p class="service__text">
-              Tenetur distinctio necessitatibus pariatur voluptatibus quidem
-              consequatur harum.
+              We offer a wide range of tours across the world from wine tasting
+              in Italy to Kenya Wild Safari.
             </p>
           </div>
           <div className="service">
@@ -47,8 +47,9 @@ const Services = () => {
 
             <h4 className="service__title">Hotel Accomodations</h4>
             <p className="service__text">
-              Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit.
+              From romantic hideaways to last minute hotel deals, 2-star economy
+              to 5-star luxury, we offer a range of accommodation options to
+              suit everyone.
             </p>
           </div>
           <div className="service">
@@ -56,8 +57,9 @@ const Services = () => {
 
             <h4 className="service__title">Ski Experiences</h4>
             <p className="service__text">
-              Quidem consequatur harum, voluptatum mollitia quae. Tenetur
-              distinctio necessitatibus pariatur voluptatibus.
+              Everyone’s idea of the perfect ski holiday is unique, so we listen
+              carefully to your needs and tailor-make a holiday that’s exactly
+              what you’re looking for.
             </p>
           </div>
           <div className="service">
@@ -65,8 +67,9 @@ const Services = () => {
 
             <h4 className="service__title">Sea Explorations</h4>
             <p className="service__text">
-              Pariatur voluptatibus quidem consequatur harum, voluptatum
-              mollitia quae.
+              Dreaming of a cruise around North America, Europe, or Asia? We
+              offeer a wide range of tour packages to provide the expedition of
+              your dreams.
             </p>
           </div>
         </section>
