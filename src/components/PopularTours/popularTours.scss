@@ -1,4 +1,4 @@
-.best-tours-wrapper {
+.popular-tours-wrapper {
   padding: 10rem 0;
   grid-column: full-start / full-end;
 
@@ -9,16 +9,17 @@
   }
 }
 
-.best-tours {
+.popular-tours {
   grid-column: center-start / center-end;
   margin: 5rem 0;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 3rem;
 
   @media screen and (max-width: 900px) {
     grid-template-columns: 1fr;
+    grid-gap: 4.5rem;
   }
 
   @media screen and (max-width: 500px) {

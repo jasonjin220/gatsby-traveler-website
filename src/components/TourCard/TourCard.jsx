@@ -1,7 +1,6 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Image from "gatsby-image"
-import { FaMap } from "react-icons/fa"
 
 import "./tourCard.scss"
 

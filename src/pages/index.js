@@ -1,12 +1,11 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-// import { Link } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner/Banner"
 import WhyUs from "../components/WhyUs/WhyUs"
 import HomeBanner from "../components/HomeBanner/HomeBanner"
-import BestTours from "../components/BestTours/BestTours"
+import PopularTours from "../components/PopularTours/PopularTours"
 import Services from "../components/Services/Services"
 import { graphql } from "gatsby"
 
@@ -29,7 +28,7 @@ export default ({ data }) => (
     </StyledHero>
     <HomeBanner />
     <WhyUs />
-    <BestTours />
+    <PopularTours />
     <Services />
   </Layout>
 )
