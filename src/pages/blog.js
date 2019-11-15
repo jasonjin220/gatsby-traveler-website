@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner/Banner"
+import BlogList from "../components/BlogList/BlogList"
 import { graphql } from "gatsby"
 
 export const query = graphql`
@@ -26,6 +27,7 @@ const blog = ({ data }) => {
           info="Our Latest Tales and Trails"
         ></Banner>
       </StyledHero>
+      <BlogList />
     </Layout>
   )
 }
