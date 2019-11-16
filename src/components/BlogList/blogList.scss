@@ -1,0 +1,21 @@
+.blog-list-section {
+  grid-column: center-start / center-end;
+  margin: 8rem 0;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 4rem;
+
+  @media screen and (max-width: 1020px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-column: full-start / full-end;
+    margin: 4rem 2rem;
+  }
+
+  div {
+    margin: 0;
+  }
+}

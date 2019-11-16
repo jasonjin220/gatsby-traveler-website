@@ -1,4 +1,6 @@
 import React from "react"
+import BlogCard from "../BlogCard/BlogCard"
+import RecentPosts from "../RecentPosts/RecentPosts"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./blogList.scss"
@@ -10,11 +12,12 @@ const getPosts = graphql`
         node {
           published(formatString: "D MMMM Y")
           title
+          intro
           slug
           id: contentful_id
           image {
             fluid {
-              src
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
@@ -29,7 +32,18 @@ const Blogs = () => {
 
   console.log(posts)
 
-  return <div>My blog list</div>
+  return (
+    <div className="container">
+      <section className="blog-list-section">
+        <div>
+          {posts.map(({ node }) => (
+            <BlogCard {...node} key={node.id} />
+          ))}
+        </div>
+        <RecentPosts posts={posts} />
+      </section>
+    </div>
+  )
 }
 
 export default Blogs
