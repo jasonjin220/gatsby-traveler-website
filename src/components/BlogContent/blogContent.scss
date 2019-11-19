@@ -1,0 +1,57 @@
+.blog-section {
+  grid-column: center-start / center-end;
+  margin: 8rem 0;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 4rem;
+
+  @media screen and (max-width: 1020px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-column: full-start / full-end;
+    margin: 4rem 2rem;
+  }
+
+  .blog {
+    &__content {
+      margin-top: 6rem;
+    }
+
+    &__title {
+      font-size: 3.8rem;
+      font-family: "Nunito";
+      font-weight: bold;
+      color: var(--primaryColor);
+
+      @media screen and (max-width: 500px) {
+        font-size: 3.2rem;
+      }
+    }
+
+    &__published {
+      font-size: 1.7rem;
+      color: #585858;
+    }
+
+    &__image {
+      margin: 3rem 0;
+    }
+
+    h2,
+    h3 {
+      font-size: 2.4rem;
+      font-family: "Nunito";
+      font-weight: bold;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      color: #484848;
+    }
+
+  }
+}
