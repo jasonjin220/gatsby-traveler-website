@@ -9,7 +9,6 @@ const TourTemplate = ({ data }) => {
   const {
     name,
     price,
-    country,
     departure,
     days,
     description: { description },
@@ -41,7 +40,6 @@ export const query = graphql`
       days
       start(formatString: "dddd MMMM Do, YYYY")
       departure
-      country
       description {
         description
       }
