@@ -17,7 +17,24 @@
 
   .blog {
     &__content {
-      margin-top: 6rem;
+      margin: 6rem 0;
+
+      @media screen and (max-width: 500px) {
+        margin: 4rem 0;
+      }
+
+      h2,
+      h3 {
+        font-size: 2.4rem;
+        font-family: "Nunito";
+        font-weight: bold;
+        margin-top: 2rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        color: #484848;
+      }
     }
 
     &__title {
@@ -33,24 +50,11 @@
 
     &__published {
       font-size: 1.7rem;
-      color: #585858;
+      color: #6e6e6e;
     }
 
     &__image {
       margin: 3rem 0;
-    }
-
-    h2,
-    h3 {
-      font-size: 2.4rem;
-      font-family: "Nunito";
-      font-weight: bold;
-      margin-top: 2rem;
-    }
-
-    p {
-      font-size: 1.8rem;
-      color: #484848;
     }
 
   }
