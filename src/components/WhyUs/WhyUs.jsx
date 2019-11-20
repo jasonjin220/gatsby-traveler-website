@@ -1,14 +1,33 @@
 import React from "react"
 import Title from "../Title/Title"
-import { Link } from "gatsby"
-import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import "./whyus.scss"
 
-const getImage = graphql`
-  query whyusImage {
-    whyusImage: file(relativePath: { eq: "whyus.jpg" }) {
+const getImages = graphql`
+  query images {
+    img1: file(relativePath: { eq: "whyus/traveler.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    img2: file(relativePath: { eq: "whyus/guide.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    img3: file(relativePath: { eq: "whyus/groups.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    img4: file(relativePath: { eq: "whyus/scenery.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -19,62 +38,85 @@ const getImage = graphql`
 `
 
 const WhyUs = () => {
-  const { whyusImage } = useStaticQuery(getImage)
+  const images = useStaticQuery(getImages)
+  const { img1, img2, img3, img4 } = images
 
   return (
-    <section className="whyus">
-      <Title title="Why choose " subtitle="Traveler?" />
-      <CenteredDiv>
-        <article className="whyus__img">
-          <div className="whyus__img-container">
-            <Image fluid={whyusImage.childImageSharp.fluid} />
+    <div className="container">
+      <section className="whyus">
+        <Title title="Why choose " subtitle="Traveler?" />
+
+        <div className="whyus__wrapper">
+          <div className="whyus-card">
+            <figure>
+              <Image
+                fluid={img1.childImageSharp.fluid}
+                className="whyus-card__img"
+                alt="whyus card"
+              />
+            </figure>
+            <div className="whyus-card__content">
+              <h2 className="whyus-card__title">Our Vehicles</h2>
+              <p className="whyus-card__text">
+                Travel in style with our fleet of luxury vehicles, complete with
+                USB chargers, WIFI and comfy seats.
+              </p>
+            </div>
           </div>
-        </article>
-        <article className="whyus__info">
-          <p className="whyus__info-text">
-            We believe in doing more than just visiting a place, we believe in
-            really getting out there and having an adventure. It's not just
-            about where you go, it's how you experience it.
-          </p>
-          <p className="whyus__info-text">
-            Travelling can teach you more than any university course. You learn
-            about the culture of the country you visit. If you talk to locals,
-            you will likely learn about their thinking, habits, traditions and
-            history as well.
-          </p>
-          <p className="whyus__info-text">
-            You will realise how you really feel about foreign people.You will
-            be able to observe how you react in completely new situations. You
-            will test your language, orientational and social skills. You will
-            not be the same person after returning home.
-          </p>
-          <Link to="/about">
-            <button type="button" className="btn-primary">
-              Read More
-            </button>
-          </Link>
-        </article>
-      </CenteredDiv>
-    </section>
+          <div className="whyus-card">
+            <figure>
+              <Image
+                fluid={img2.childImageSharp.fluid}
+                className="whyus-card__img"
+                alt="whyus card"
+              />
+            </figure>
+            <div className="whyus-card__content">
+              <h2 className="whyus-card__title">Local Guides</h2>
+              <p className="whyus-card__text">
+                Explore local spots with our guides who are passionate about
+                showing you their backyard.
+              </p>
+            </div>
+          </div>
+          <div className="whyus-card">
+            <figure>
+              <Image
+                fluid={img3.childImageSharp.fluid}
+                className="whyus-card__img"
+                alt="whyus card"
+              />
+            </figure>
+            <div className="whyus-card__content">
+              <h2 className="whyus-card__title">Small Groups</h2>
+              <p className="whyus-card__text">
+                With a maximum group size of 18, you are bound to bond with your
+                travel family.
+              </p>
+            </div>
+          </div>
+          <div className="whyus-card">
+            <figure>
+              <Image
+                fluid={img4.childImageSharp.fluid}
+                className="whyus-card__img"
+                alt="whyus card"
+              />
+            </figure>
+            <div className="whyus-card__content">
+              <h2 className="whyus-card__title">
+                <span class="short-text">Stunning </span>Scenery
+              </h2>
+              <p className="whyus-card__text">
+                Natural backdrops include pristine beaches, jagged cliffs,
+                mountain ranges and crystal clear lakes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }
-
-const CenteredDiv = styled.div`
-  width: 80vw;
-  margin: 0 auto;
-
-  @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 3rem;
-    align-items: center;
-    margin-top: 3rem;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 95vw;
-    max-width: 1170px;
-  }
-`
 
 export default WhyUs
