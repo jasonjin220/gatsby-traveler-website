@@ -4,10 +4,7 @@ import styled from "styled-components"
 const Title = ({ title, subtitle }) => {
   return (
     <TitleWrapper>
-      <h3>
-        <span className="title">{title}</span>
-        <span className="subtitle">{subtitle}</span>
-      </h3>
+      <h2 className="title">{title}</h2>
     </TitleWrapper>
   )
 }
@@ -15,26 +12,20 @@ const Title = ({ title, subtitle }) => {
 const TitleWrapper = styled.div`
   text-transform: uppercase;
 
-  h3 {
+  h2 {
     text-align: center;
-    font-size: 2.8rem;
-    font-weight: bold;
+    font-size: 3rem;
     font-family: "Nunito";
+    font-weight: bold;
 
     @media screen and (max-width: 500px) {
-      font-size: 2rem;
-      margin: 0 1.5rem 3rem;
+      font-size: 2.6rem;
+      margin: 0 1rem 3rem;
     }
   }
   .title {
-  }
-
-  .subtitle {
+    display: block;
     color: var(--primaryColor);
-
-    @media screen and (max-width: 500px) {
-      display: block;
-    }
   }
 `
 

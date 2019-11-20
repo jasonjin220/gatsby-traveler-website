@@ -33,7 +33,7 @@ const PopularTours = () => {
 
   return (
     <div className="popular-tours-wrapper">
-      <Title title="Popular" subtitle=" tours" />
+      <Title title="Popular tours" />
 
       <div className="container">
         <section className="popular-tours">

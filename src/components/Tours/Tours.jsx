@@ -33,7 +33,7 @@ const Tours = () => {
 
   return (
     <div className="tours-wrapper">
-      <Title title="Choose your dream " subtitle="tour" />
+      <Title title="Choose your dream tour" />
       <div className="container">
         <section className="tours">
           {tours.map(({ node }) => (

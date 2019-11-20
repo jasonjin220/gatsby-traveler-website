@@ -44,7 +44,7 @@ const WhyUs = () => {
   return (
     <div className="container">
       <section className="whyus">
-        <Title title="Why choose " subtitle="Traveler?" />
+        <Title title="Why choose Traveler?" />
 
         <div className="whyus__wrapper">
           <div className="whyus-card">

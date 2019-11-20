@@ -13,7 +13,7 @@ import "./services.scss"
 const Services = () => {
   return (
     <div className="services-wrapper">
-      <Title title="getting adventure with" subtitle=" services" />
+      <Title title="getting adventure with services" />
       <div className="container">
         <section className="services">
           <div className="service">
