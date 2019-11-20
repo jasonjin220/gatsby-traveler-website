@@ -6,7 +6,6 @@ import Banner from "../components/Banner/Banner"
 import BlogContent from "../components/BlogContent/BlogContent"
 
 const BlogTemplate = ({ data }) => {
-  // console.log(data)
   const { title, image } = data.blog
   return (
     <Layout>

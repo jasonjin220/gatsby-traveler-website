@@ -29,13 +29,12 @@ const getPosts = graphql`
 const images = {
   renderNode: {
     "embedded-asset-block": node => {
-      console.log(node)
       return (
         <img
           className="blog__image"
           width="100%"
           src={node.data.target.fields.file["en-US"].url}
-          alt=""
+          alt="blog"
         />
       )
     },

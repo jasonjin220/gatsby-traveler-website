@@ -5,7 +5,6 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import "./card.scss"
 
 const Card = ({ title, imgSrc, slug, price, days, departure }) => {
-  console.log(imgSrc)
   return (
     <AniLink fade to={`/tours/${slug}`} className="card">
       <figure className="card__img-wrapper">

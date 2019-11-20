@@ -5,7 +5,6 @@ import TourBanner from "../components/TourBanner/TourBanner"
 import TourDetails from "../components/TourDetails/TourDetails"
 
 const TourTemplate = ({ data }) => {
-  console.log(data)
   const {
     name,
     price,

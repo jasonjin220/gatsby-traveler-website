@@ -13,7 +13,6 @@ const TourDetails = ({
   departure,
   itinerary,
 }) => {
-  console.log("itinerary:", itinerary)
   return (
     <section className="tour-section">
       <div className="tour-section__details">
