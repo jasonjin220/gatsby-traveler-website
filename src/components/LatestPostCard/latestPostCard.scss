@@ -1,0 +1,64 @@
+.latest-post-card {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8rem 4rem;
+  border: .1rem solid #e7e7e7;
+  padding: 0;
+  border-radius: .5rem;
+
+  @media only screen and (max-width: 1050px) {
+    grid-template-rows: 1fr 10rem 4rem;
+  }
+
+  @media only screen and (max-width: 500px) {
+    grid-template-rows: 1fr 8rem 4rem;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: .4rem;
+    border-top-right-radius: .4rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-family: "Nunito";
+    font-weight: bold;
+    color: var(--primaryColor);
+    padding: 1rem;
+    padding-top: 2rem;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+
+    @media only screen and (max-width: 1050px) {
+      font-size: 1.9rem;
+    }
+
+    @media only screen and (max-width: 675px) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 350px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__published {
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin: 0;
+    color: #585858;
+
+    @media only screen and (max-width: 1020px) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: 675px) {
+      font-size: 1.2rem;
+    }
+  }
+}

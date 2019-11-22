@@ -7,6 +7,7 @@ import WhyUs from "../components/WhyUs/WhyUs"
 import HomeBanner from "../components/HomeBanner/HomeBanner"
 import PopularTours from "../components/PopularTours/PopularTours"
 import Services from "../components/Services/Services"
+import LatestPosts from "../components/LatestPosts/LatestPosts"
 import { graphql } from "gatsby"
 
 export default ({ data }) => (
@@ -30,6 +31,7 @@ export default ({ data }) => (
     <WhyUs />
     <PopularTours />
     <Services />
+    <LatestPosts />
   </Layout>
 )
 
