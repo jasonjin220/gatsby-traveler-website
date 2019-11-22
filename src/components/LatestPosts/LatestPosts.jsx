@@ -31,7 +31,6 @@ const getPosts = graphql`
 const LatestPosts = () => {
   const response = useStaticQuery(getPosts)
   const posts = response.posts.edges
-  console.log(posts)
   return (
     <div className="latest-posts">
       <Title title="Latest Posts from Blog" />
