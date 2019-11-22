@@ -3,7 +3,7 @@ import "./tour.scss"
 import TourCard from "../TourCard/TourCard"
 
 const Tour = ({ tour }) => {
-  const { name, price, days, slug, images } = tour
+  const { name, price, days, slug, images, departure } = tour
   let mainImage = images[0].fluid
 
   return (
@@ -14,6 +14,7 @@ const Tour = ({ tour }) => {
         days={days}
         image={mainImage}
         slug={slug}
+        departure={departure}
       />
     </article>
   )

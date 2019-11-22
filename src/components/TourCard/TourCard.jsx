@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 
 import "./tourCard.scss"
 
-const TourCard = ({ name, price, slug, days, image }) => {
+const TourCard = ({ name, price, slug, days, image, departure }) => {
   return (
     <div className="tour-card">
       <AniLink fade to={`/tours/${slug}`}>
@@ -17,6 +17,7 @@ const TourCard = ({ name, price, slug, days, image }) => {
         </figure>
       </AniLink>
       <h3 className="tour-card__name">{name}</h3>
+      <p className="tour-card__departure">Departs {departure}</p>
       <div className="tour-card__price-offer">
         From <span> &pound;{price}</span>
       </div>

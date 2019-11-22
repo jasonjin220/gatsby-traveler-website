@@ -16,6 +16,7 @@ const getTours = graphql`
           country
           contentful_id
           days
+          departure
           images {
             fluid {
               ...GatsbyContentfulFluid_tracedSVG

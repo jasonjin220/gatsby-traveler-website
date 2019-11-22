@@ -82,19 +82,34 @@
 
   &__name {
     margin: 0;
-    padding: 0 2rem;
-    font-size: 1.9rem;
+    padding: 2rem 2rem 0;
+    font-size: 2.1rem;
     color: rgb(63, 63, 63);
     height: 100%;
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-family: "Nunito";
     z-index: 10;
 
     @media screen and (max-width: 500px) {
       font-size: 1.9rem;
+    }
+  }
+
+  &__departure {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Nunito";
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #aeaeae;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.4rem;
     }
   }
 
@@ -105,15 +120,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: "Nunito";
     font-weight: bold;
-    color: rgb(63, 63, 63);
+    color: var(--primaryColor);
 
     span {
       margin-left: .5rem;
-      font-size: 1.5rem;
-      font-weight: 600;
+      font-size: 1.65rem;
       color: var(--primaryColor);
     }
   }
