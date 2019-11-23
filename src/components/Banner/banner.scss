@@ -4,6 +4,7 @@
   color: var(--mainWhite);
 
   h1 {
+    font-family: 'Noto Serif', serif;
     font-size: 4rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -18,7 +19,7 @@
     font-size: 2rem;
     margin: 0 auto;
     margin-bottom: 2rem;
-    color: #fff;
+    color: var(--mainWhite);
 
     font-family: "Nunito";
     font-weight: 700;

@@ -10,22 +10,18 @@ const Title = ({ title, subtitle }) => {
 }
 
 const TitleWrapper = styled.div`
-  text-transform: uppercase;
-
-  h2 {
+  .title {
+    text-transform: uppercase;
     text-align: center;
     font-size: 3rem;
     font-family: "Nunito";
     font-weight: bold;
+    color: var(--primaryColor);
 
     @media screen and (max-width: 500px) {
       font-size: 2.6rem;
       margin: 0 1rem 3rem;
     }
-  }
-  .title {
-    display: block;
-    color: var(--primaryColor);
   }
 `
 

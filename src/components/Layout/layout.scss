@@ -6,12 +6,11 @@
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
-  --mainGrey: #ececec;
-  --darkGrey: #cfcfcf;
+  --mainGrey: #e7e7e7;
+  --lightGrey: #858585;
+  --darkGrey: #484848;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 2px;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 html {
@@ -58,7 +57,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
   margin-bottom: 1.25rem;
   font-size: 2.8rem;
   letter-spacing: var(--mainSpacing);
@@ -67,7 +67,7 @@ h6 {
 p {
   margin-bottom: 1.25rem;
   font-family: 'Nunito', sans-serif;
-  color: #484848;
+  color: var(--darkGrey);
 }
 
 .container {

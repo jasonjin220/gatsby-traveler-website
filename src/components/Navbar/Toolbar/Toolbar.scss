@@ -73,7 +73,7 @@
     }
 
     a {
-      color: rgb(41, 42, 41);
+      color: var(--darkGrey);
       position: relative;
       text-transform: uppercase;
       font-size: 18px;

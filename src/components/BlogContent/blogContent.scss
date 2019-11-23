@@ -26,21 +26,17 @@
       h2,
       h3 {
         font-size: 2.4rem;
-        font-family: "Nunito";
-        font-weight: bold;
         margin-top: 2rem;
       }
 
       p {
         font-size: 1.8rem;
-        color: #484848;
+        color: var(--darkGrey);
       }
     }
 
     &__title {
       font-size: 3.8rem;
-      font-family: "Nunito";
-      font-weight: bold;
       color: var(--primaryColor);
 
       @media screen and (max-width: 500px) {
@@ -50,7 +46,7 @@
 
     &__published {
       font-size: 1.7rem;
-      color: #6e6e6e;
+      color: var(--lightGrey);
     }
 
     &__image {

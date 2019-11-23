@@ -2,7 +2,7 @@
   position: relative;
   grid-column: center-start / center-end;
   margin-top: 10rem;
-  color: #fff;
+  color: var(--mainWhite);
 
   @media screen and (max-width: 760px) {
     display: none;
@@ -27,13 +27,13 @@
     font-size: 3rem;
     line-height: 3.5rem;
     padding-bottom: 1.5rem;
-    font-family: "Nunito";
   }
 
   &__text {
     font-family: "Nunito";
     font-weight: 300;
     font-size: 1.6rem;
+    color: var(--mainWhite);
   }
 
   &__img {

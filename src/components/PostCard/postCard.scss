@@ -58,7 +58,7 @@
 
   &__published {
     font-size: 1.2rem;
-    color: #585858;
+    color: var(--lightGrey);
 
     @media only screen and (max-width: 1020px) {
       font-size: 1.4rem;

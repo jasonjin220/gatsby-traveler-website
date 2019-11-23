@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 30rem .5fr;
   margin-bottom: 4rem;
-  border: .1rem solid rgb(226, 226, 226);
+  border: .1rem solid var(--mainGrey);
   border-radius: .4rem;
   padding: 1.2rem 1rem;
 
@@ -33,8 +33,6 @@
 
   &__title {
     font-size: 3rem;
-    font-family: "Nunito";
-    font-weight: bold;
     letter-spacing: 2px;
     color: var(--primaryColor);
 
@@ -45,7 +43,7 @@
 
   &__published {
     font-size: 1.7rem;
-    color: #585858;
+    color: var(--lightGrey);
 
     @media only screen and (max-width: 475px) {
       font-size: 1.4rem;
@@ -55,7 +53,7 @@
 
   &__intro {
     font-size: 1.7rem;
-    color: #484848;
+    color: var(--darkGrey);
 
     @media screen and (max-width: 500px) {
       font-size: 1.6rem;
@@ -68,7 +66,7 @@
 
     &:hover {
       background-color: #0ba889;
-      color: #fff;
+      color: var(--mainWhite);
     }
 
     @media screen and (max-width: 900px) {

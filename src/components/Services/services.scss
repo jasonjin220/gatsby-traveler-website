@@ -1,6 +1,6 @@
 .services-wrapper {
   margin: 10rem 0;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid var(--mainGrey);
 
   @media screen and (max-width: 500px) {
     margin: 6rem 0;
@@ -38,7 +38,7 @@
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem;
-  border: .1rem solid #e7e7e7;
+  border: .1rem solid var(--mainGrey);
   padding: 2rem;
   border-radius: .5rem;
 
@@ -57,9 +57,7 @@
 
   &__title {
     font-size: 1.8rem;
-    font-family: "Nunito";
-    font-weight: bold;
-    color: #484848;
+    color: var(--darkGrey);
 
     @media only screen and (max-width: 1200px) {
       font-size: 1.5rem;
