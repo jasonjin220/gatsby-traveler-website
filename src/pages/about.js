@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner/Banner"
+import AboutTraveler from "../components/AboutTraveler/AboutTraveler"
 import { graphql } from "gatsby"
 
 export const query = graphql`
@@ -26,9 +27,10 @@ const about = ({ data }) => {
         <Banner
           className="banner"
           title="About Us"
-          info="connect people to life-enriching travel experiences"
+          info="We connect people to life-enriching travel experiences"
         ></Banner>
       </StyledHero>
+      <AboutTraveler />
     </Layout>
   )
 }
