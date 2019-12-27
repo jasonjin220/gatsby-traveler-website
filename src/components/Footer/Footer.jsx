@@ -20,6 +20,9 @@ const Footer = () => {
         <AniLink fade to="/tours">
           Tours
         </AniLink>
+        <AniLink fade to="/blog">
+          Blog
+        </AniLink>
         <AniLink fade to="/about">
           About
         </AniLink>
