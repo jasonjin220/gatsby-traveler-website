@@ -9,6 +9,7 @@
 
   @media only screen and (max-width: 1050px) {
     grid-column: full-start / full-end;
+    margin: 6rem 2rem;
   }
 
   .about-section {
@@ -23,6 +24,42 @@
     @media only screen and (max-width: 730px) {
       grid-template-columns: 1fr;
       height: auto;
+
+      .experts-content {
+        grid-row: 1;
+      }
+
+      .experts-image {
+        grid-row: 2;
+      }
+
+      .guides-content {
+        grid-row: 1;
+      }
+
+      .guides-image {
+        grid-row: 2;
+      }
+
+      .groups-content {
+        grid-row: 1;
+      }
+
+      .groups-image {
+        grid-row: 2;
+      }
+
+      .peace-content {
+        grid-row: 1;
+      }
+
+      .peace-image {
+        grid-row: 2;
+      }
+    }
+
+    figure {
+      height: inherit;
     }
 
     &__image {
@@ -33,6 +70,10 @@
 
       @media only screen and (max-width: 1200px) {
         height: 40rem;
+      }
+
+      @media only screen and (max-width: 465px) {
+        height: 26rem;
       }
     }
 
@@ -47,6 +88,11 @@
 
       @media only screen and (max-width: 850px) {
         grid-template-rows: 8.5rem 30rem;
+      }
+
+      @media only screen and (max-width: 730px) {
+        grid-template-rows: min-content min-content;
+        padding: 1rem 0;
       }
 
       .title {

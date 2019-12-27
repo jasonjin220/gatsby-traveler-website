@@ -49,14 +49,14 @@ const AboutSection = () => {
     <div className="container">
       <div className="about-container">
         <section className="about-section">
-          <figure>
+          <figure className="experts-image">
             <Image
               fluid={img1.childImageSharp.fluid}
               className="about-section__image"
               alt="about"
             />
           </figure>
-          <div className="about-section__content">
+          <div className="about-section__content experts-content">
             <h2 className="title">The adventure travel experts</h2>
             <p className="text">
               Since launching in 2016 with only six tours in a four-page
@@ -92,14 +92,14 @@ const AboutSection = () => {
           </figure>
         </section>
         <section className="about-section">
-          <figure>
+          <figure className="guides-image">
             <Image
               fluid={img3.childImageSharp.fluid}
               className="about-section__image"
               alt="about"
             />{" "}
           </figure>
-          <div className="about-section__content">
+          <div className="about-section__content guides-content">
             <h2 className="title">Expert local guides</h2>
             <p className="text">
               As your resident expert, your guide (or tour leader) will use
@@ -113,7 +113,7 @@ const AboutSection = () => {
           </div>
         </section>
         <section className="about-section">
-          <div className="about-section__content">
+          <div className="about-section__content groups-content">
             <h2 className="title">Small groups</h2>
             <p className="text">
               Our average group size is just 12; big enough to meet like-minded
@@ -125,7 +125,7 @@ const AboutSection = () => {
               particular trip (age range, solos vs couples etc).
             </p>
           </div>
-          <figure>
+          <figure className="groups-image">
             <Image
               fluid={img4.childImageSharp.fluid}
               className="about-section__image"
@@ -134,14 +134,14 @@ const AboutSection = () => {
           </figure>
         </section>
         <section className="about-section">
-          <figure>
+          <figure className="peace-image">
             <Image
               fluid={img5.childImageSharp.fluid}
               className="about-section__image"
               alt="about"
             />{" "}
           </figure>
-          <div className="about-section__content">
+          <div className="about-section__content peace-content">
             <h2 className="title">Peace of mind</h2>
             <p className="text">
               If you're worried your trip will be too full on or too relaxed,
