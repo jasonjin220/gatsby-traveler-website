@@ -37,7 +37,7 @@ const Services = () => {
             <img className="service__icon" src={route} alt="route" />
 
             <h4 className="service__title">Tour Packages</h4>
-            <p class="service__text">
+            <p className="service__text">
               We offer a wide range of tours across the world from wine tasting
               in Italy to Kenya Wild Safari.
             </p>

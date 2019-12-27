@@ -38,7 +38,7 @@ const LatestPosts = () => {
       <div className="container">
         <section className="posts">
           {posts.map(({ node }) => (
-            <LatestPostCard key={node.contentful_id} post={node} />
+            <LatestPostCard key={node.id} post={node} />
           ))}
         </section>
       </div>

@@ -105,7 +105,7 @@ const WhyUs = () => {
             </figure>
             <div className="whyus-card__content">
               <h2 className="whyus-card__title">
-                <span class="short-text">Stunning </span>Scenery
+                <span className="short-text">Stunning </span>Scenery
               </h2>
               <p className="whyus-card__text">
                 Natural backdrops include pristine beaches, jagged cliffs,
