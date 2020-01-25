@@ -14,7 +14,7 @@ module.exports = {
       "Book an adventure tour with Traveler and start exploring Europe, Asia, South America, Australia and beyond!",
     author: "Alex Ticovschi",
     twitterUsername: "@alex_ticovschi",
-    image: "src/images/hero.jpg",
+    image: "/hero.jpg",
     siteUrl: "https://traveler-gatsby.netlify.com",
   },
   plugins: [
