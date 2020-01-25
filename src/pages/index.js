@@ -9,9 +9,11 @@ import PopularTours from "../components/PopularTours/PopularTours"
 import Services from "../components/Services/Services"
 import LatestPosts from "../components/LatestPosts/LatestPosts"
 import { graphql } from "gatsby"
+import SEO from "../components/SEO"
 
 export default ({ data }) => (
   <Layout>
+    <SEO title="Home" description="home page" />
     <StyledHero
       home="true"
       opacity="true"

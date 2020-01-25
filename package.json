@@ -20,6 +20,7 @@
     "gatsby-background-image": "^0.8.15",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-playground": "^1.0.6",
+    "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-sharp": "^2.2.34",
     "gatsby-plugin-styled-components": "^3.1.11",
@@ -31,6 +32,7 @@
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
     "react-icons": "^3.8.0",
     "styled-components": "^4.4.0"
   },
@@ -39,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/alexticovschi/portfolio"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
