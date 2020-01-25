@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import TourBanner from "../components/TourBanner/TourBanner"
 import TourDetails from "../components/TourDetails/TourDetails"
+import SEO from "../components/SEO"
 
 const TourTemplate = ({ data }) => {
   const {
@@ -17,6 +18,7 @@ const TourTemplate = ({ data }) => {
   } = data.tour
   return (
     <Layout>
+      <SEO title={name} description="Tour page" />
       <TourBanner images={images} />
       <TourDetails
         name={name}

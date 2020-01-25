@@ -4,6 +4,7 @@ import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner/Banner"
 import AboutTraveler from "../components/AboutTraveler/AboutTraveler"
 import { graphql } from "gatsby"
+import SEO from "../components/SEO"
 
 export const query = graphql`
   query {
@@ -20,6 +21,7 @@ export const query = graphql`
 const about = ({ data }) => {
   return (
     <Layout>
+      <SEO title="About" description="About page" />
       <StyledHero
         opacity="true"
         img={data.aboutHeroImage.childImageSharp.fluid}

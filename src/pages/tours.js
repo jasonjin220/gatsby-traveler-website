@@ -4,10 +4,12 @@ import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner/Banner"
 import Tours from "../components/Tours/Tours"
 import { graphql } from "gatsby"
+import SEO from "../components/SEO"
 
 const tours = ({ data }) => {
   return (
     <Layout>
+      <SEO title="Tours" description="Tours page" />
       <StyledHero
         opacity="true"
         img={data.toursHeroImage.childImageSharp.fluid}
