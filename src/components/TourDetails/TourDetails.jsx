@@ -59,7 +59,7 @@ const TourDetails = ({
         <div className="highlight-box-container">
           <h2 className="hightlight-title">Highlights</h2>
           {highlights.map(highlight => (
-            <div className="highlight-box">
+            <div key={highlight.title} className="highlight-box">
               <div className="highlight-box__image">
                 <Image
                   fluid={highlight.fluid}
@@ -77,13 +77,13 @@ const TourDetails = ({
           ))}
         </div>
       </section>
-      <section class="tour-section__itinerary">
+      <section className="tour-section__itinerary">
         <h2 className="itinerary-title">Itinerary</h2>
-        <div class="itinerary__tabs">
+        <div className="itinerary__tabs">
           {itinerary.map((it, idx) => (
-            <div class="tab">
+            <div key={idx} className="tab">
               <input type="checkbox" id={idx} />
-              <label class="tab__label" for={idx}>
+              <label className="tab__label" htmlFor="">
                 {!it.title ? (
                   it.day
                 ) : (
@@ -93,7 +93,7 @@ const TourDetails = ({
                   </p>
                 )}
               </label>
-              <div class="tab__content">{it.info}</div>
+              <div className="tab__content">{it.info}</div>
             </div>
           ))}
         </div>
