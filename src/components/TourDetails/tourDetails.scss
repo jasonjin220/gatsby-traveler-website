@@ -2,7 +2,7 @@
   max-width: 126rem;
   margin: 0 auto;
   margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-bottom: 12rem;
   display: grid;
   grid-template-columns: 70% 30%;
   grid-column-gap: 5rem;
@@ -20,7 +20,7 @@
 
   @media only screen and (max-width: 450px) {
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
   }
 
   &__details {
@@ -373,18 +373,17 @@
 
   // :checked
   input:checked {
-    +.tab__label {
+    + .tab__label {
       &::after {
         transform: rotate(90deg);
       }
     }
 
-    ~.tab__content {
+    ~ .tab__content {
       max-height: 100vh;
       padding: 1em;
     }
   }
-
 
   &__itinerary {
     @media only screen and (max-width: 1450px) {
@@ -409,7 +408,6 @@
       overflow: hidden;
       box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.06);
     }
-
   }
 
   .tab {
