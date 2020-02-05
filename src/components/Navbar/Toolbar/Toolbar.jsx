@@ -45,6 +45,11 @@ const Toolbar = ({ isOpen, drawerClickHandler }) => (
                 About
               </AniLink>
             </li>
+            <li>
+              <AniLink fade to="/contact">
+                Contact
+              </AniLink>
+            </li>
             <div className="social-links">
               <li>
                 <a href="https://www.tripadvisor.co.uk/">

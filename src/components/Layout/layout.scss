@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900&display=swap");
 
 :root {
   --primaryColor: #1abc9c;
+  --primaryColor2: #0ba889;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -36,7 +37,7 @@ body {
 }
 
 *:focus {
-  outline: none
+  outline: none;
 }
 
 body {
@@ -57,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   margin-bottom: 1.25rem;
   font-size: 2.8rem;
@@ -66,14 +67,18 @@ h6 {
 
 p {
   margin-bottom: 1.25rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: var(--darkGrey);
 }
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-      [col-start] minmax(min-content, 15.8rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 15.8rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 .defaultHero {

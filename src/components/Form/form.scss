@@ -1,0 +1,124 @@
+.contact-form {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+
+  margin: 8rem 0;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 500px) {
+    grid-column: full-start / full-end;
+    margin: 3rem 2rem 5rem 2rem;
+  }
+
+  &__phone {
+    color: var(--primaryColor2);
+    font-size: 3rem;
+  }
+
+  &__email {
+    a {
+      color: var(--primaryColor2);
+    }
+  }
+
+  &__box-left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.6fr 1fr 3fr;
+
+    @media (max-width: 900px) {
+      grid-template-rows: 1fr 0.6fr 1fr 1fr;
+
+      grid-row-gap: 2rem;
+    }
+
+    &__title {
+      padding-top: 3rem;
+      font-size: 3rem;
+      color: var(--darkGrey);
+      color: var(--primaryColor);
+
+      text-transform: uppercase;
+      text-align: left;
+
+      @media (max-width: 500px) {
+        font-size: 3rem;
+      }
+    }
+
+    &__address,
+    &__phone-email,
+    &__info {
+      font-size: 1.9rem;
+    }
+
+    @media (max-width: 500px) {
+      &__address,
+      &__phone-email,
+      &__info {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__address {
+    }
+
+    &__phone-email {
+    }
+
+    &__info {
+      padding-right: 2rem;
+
+      @media (max-width: 900px) {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.form {
+  &__title {
+    padding: 3rem 0;
+    font-size: 3rem;
+    color: var(--darkGrey);
+    color: var(--primaryColor);
+
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (max-width: 900px) {
+      text-align: left;
+      padding: 1rem 0;
+    }
+
+    @media (max-width: 500px) {
+      margin-top: 4rem;
+      font-size: 3rem;
+    }
+  }
+
+  .select {
+    text-align: left;
+    width: 100%;
+    font-size: 1.4rem;
+    z-index: 1000;
+  }
+
+  &__btn {
+    width: 20rem;
+    width: 100%;
+
+    &:hover {
+      background-color: var(--primaryColor2);
+      color: var(--mainWhite);
+    }
+
+    @media screen and (max-width: 900px) {
+      font-size: 1.5rem;
+    }
+  }
+}
