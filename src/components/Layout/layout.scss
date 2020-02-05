@@ -17,6 +17,25 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5%;
+
+  /* Scrollbar styles */
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--lightGrey);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--primaryColor) 60%,
+      #414141
+    );
+    outline: 1px solid var(--lightGrey);
+  }
 }
 
 html,
