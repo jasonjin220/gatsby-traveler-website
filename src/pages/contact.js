@@ -3,6 +3,7 @@ import Layout from "../components/Layout/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner/Banner"
 import Form from "../components/Form/Form"
+import PopularTours from "../components/PopularTours/PopularTours"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 
@@ -29,6 +30,7 @@ const contact = ({ data }) => {
         <Banner className="banner" title="Get In Touch"></Banner>
       </StyledHero>
       <Form />
+      <PopularTours />
     </Layout>
   )
 }
