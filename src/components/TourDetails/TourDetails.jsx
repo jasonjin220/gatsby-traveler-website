@@ -83,7 +83,7 @@ const TourDetails = ({
           {itinerary.map((it, idx) => (
             <div key={idx} className="tab">
               <input type="checkbox" id={idx} />
-              <label className="tab__label" htmlFor="">
+              <label className="tab__label" htmlFor={idx}>
                 {!it.title ? (
                   it.day
                 ) : (
