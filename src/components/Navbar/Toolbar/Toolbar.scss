@@ -21,7 +21,6 @@
     align-items: center;
   }
 
-
   .toolbar__logo {
     a {
       text-decoration: none;
@@ -38,7 +37,7 @@
 
     .logo {
       font-size: 3rem;
-      margin-right: .5rem;
+      margin-right: 0.5rem;
     }
   }
 
@@ -79,7 +78,7 @@
       font-size: 18px;
       font-weight: 500;
       text-decoration: none;
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover,
       &:active {
@@ -106,14 +105,13 @@
   }
 }
 
-
 @media (max-width: 1200px) {
   .toolbar-wrapper {
     padding: 0 15px;
   }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 900px) {
   .toolbar {
     height: 66px;
 
@@ -121,11 +119,9 @@
       display: none;
     }
 
-
     .toolbar-wrapper {
       padding: 0 15px;
     }
-
 
     .toolbar__logo {
       a {
@@ -141,10 +137,9 @@
       }
     }
   }
-
 }
 
-@media (min-width: 769px) {
+@media (min-width: 900px) {
   .toolbar__toggle-button {
     display: none;
   }
