@@ -1,26 +1,25 @@
 .blog-card {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 30rem .5fr;
+  grid-template-rows: 30rem 0.5fr;
   margin-bottom: 4rem;
-  border: .1rem solid var(--mainGrey);
-  border-radius: .4rem;
+  border: 0.1rem solid var(--mainGrey);
+  border-radius: 0.4rem;
   padding: 1.2rem 1rem;
 
   @media screen and (max-width: 500px) {
-    grid-template-rows: 16rem .5fr;
+    grid-template-rows: 16rem 0.5fr;
   }
 
   &__content {
     display: grid;
-    grid-template-rows: 1fr .3fr 2fr .5fr;
+    grid-template-rows: 1fr 0.3fr 2fr 0.5fr;
     grid-row-gap: 1rem;
     padding: 2rem;
 
-
     @media screen and (max-width: 500px) {
-      grid-template-rows: .8fr .2fr 1.2fr .4fr;
-      padding: .5rem;
+      grid-template-rows: 0.8fr 0.2fr 1.2fr 0.4fr;
+      padding: 0.5rem;
     }
   }
 
@@ -60,9 +59,8 @@
     }
   }
 
-
   &__btn {
-    width: 20vw;
+    width: 20rem;
 
     &:hover {
       background-color: #0ba889;
@@ -70,11 +68,7 @@
     }
 
     @media screen and (max-width: 900px) {
-      font-size: 1.5rem;
-    }
-
-    @media screen and (max-width: 900px) {
-      width: 20rem;
+      font-size: 1.4rem;
     }
 
     @media screen and (max-width: 500px) {
