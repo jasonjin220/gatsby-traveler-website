@@ -3,6 +3,7 @@ import Layout from "../components/Layout/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner/Banner"
 import AboutTraveler from "../components/AboutTraveler/AboutTraveler"
+import LatestPosts from "../components/LatestPosts/LatestPosts"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 
@@ -33,6 +34,7 @@ const about = ({ data }) => {
         ></Banner>
       </StyledHero>
       <AboutTraveler />
+      <LatestPosts />
     </Layout>
   )
 }
