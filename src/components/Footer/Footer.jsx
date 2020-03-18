@@ -1,6 +1,4 @@
 import React from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { Link } from "gatsby"
 import {
   FaFacebookF,
   FaInstagram,
