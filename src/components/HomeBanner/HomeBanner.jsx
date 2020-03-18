@@ -8,7 +8,7 @@ const getImage = graphql`
     homeBanner: file(relativePath: { eq: "homebanner.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
